@@ -113,3 +113,24 @@ export const servicesCard: ServicesCard[] = [
       "Deep insights at your fingertips. Visualize date patterns with precision editorial-style charts.",
   },
 ];
+
+
+type Features = {
+  title:string
+  description:string
+}
+
+export const features:Features[] = [
+  {
+    title: "Unmatched Security",
+    description: "Military-grade encryption for all data at rest and in transit.",
+  },
+  {
+    title: "99.9% Uptime SLA",
+    description: "Enterprise-level reliability with multi-region redundancy.",
+  },
+  {
+    title: "24/7 Expert Support",
+    description: "Direct access to the engineers who built the platform.",
+  },
+];

@@ -16,7 +16,7 @@ function Services() {
   return (
     <div>
         
-      <main className="w-full grow flex flex-col items-center text-center min-h-screen px-4 md:px-24 bg-[#f3f4f6]">
+      <main className="w-full grow flex flex-col items-center text-center  px-4 md:px-24 bg-[#f3f4f6] pb-18">
         <h1 className="text-3xl font-bold leading-tight pb-3">Architectural Services</h1>
         <p className="text-lg font-light leading-tight pb-14">Engineered for performance, built for scale. Explore the core pillars of our ecosystem.</p>
         <Carousel
