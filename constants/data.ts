@@ -134,3 +134,96 @@ export const features:Features[] = [
     description: "Direct access to the engineers who built the platform.",
   },
 ];
+
+
+// -----------  Product Pricing  -----------------
+
+
+
+export interface PricingTier {
+  id: string;
+  label: string;
+  price: string | number;
+  priceSuffix?: string;
+  description?: string;
+  features: string[];
+  cta: string;
+  highlighted: boolean;
+  badge?: string;
+}
+
+export const tiers: PricingTier[] = [
+  {
+    id: "starter",
+    label: "Starter",
+    price: 49,
+    priceSuffix: "/mo",
+    features: ["5 Projects", "Basic Analytics", "Community Support"],
+    cta: "Get Started",
+    highlighted: false,
+  },
+  {
+    id: "professional",
+    label: "Professional",
+    price: 149,
+    priceSuffix: "/mo",
+    features: [
+      "Unlimited Projects",
+      "Advanced AI Models",
+      "Priority Support",
+      "Custom Domains",
+    ],
+    cta: "Choose Pro",
+    highlighted: true,
+    badge: "Most Popular",
+  },
+  {
+    id: "enterprise",
+    label: "Enterprise",
+    price: "Custom",
+    features: [
+      "Dedicated Infrastructure",
+      "On-Premise Deployment",
+      "24/7 Dedicated Manager",
+      "SSO & SAML Security",
+    ],
+    cta: "Contact Sales",
+    highlighted: false,
+  },
+];
+
+
+// -----------  Product Pricing  -----------------
+
+type Faq = {
+  question:string
+  answer:string
+}
+
+export const faqs:Faq[] = [
+  {
+    question: "What is the integration process?",
+    answer:
+      "Integration is simple — connect your existing tools via our API or use one of our 50+ native integrations. Setup takes under 10 minutes.",
+  },
+  {
+    question: "Is my data secure in the cloud?",
+    answer:
+      "Absolutely. We use AES-256 encryption and follow strict GDPR compliance guidelines for all regional data centers.",
+  },
+  {
+    question: "Can I upgrade my plan later?",
+    answer:
+      "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately and billing is prorated.",
+  },
+  {
+    question: "Do you offer educational discounts?",
+    answer:
+      "Yes! Students and educational institutions get up to 50% off. Reach out to our support team with your institution email.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer:
+      "We accept all major credit/debit cards, UPI, net banking, and PayPal. All transactions are secured with SSL encryption.",
+  },
+];
