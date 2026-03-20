@@ -37,7 +37,7 @@ export default function Testimonials() {
               <CardContent className="flex flex-col gap-5 p-6 sm:p-8">
 
                 {/* Quote Icon */}
-                <div className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center shrink-0">
                   <svg
                     width="16"
                     height="16"

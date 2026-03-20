@@ -33,7 +33,7 @@ function Features() {
           <ul className="flex flex-col gap-6 mt-2">
             {features.map((feature, idx) => (
               <li key={idx} className="flex items-start gap-4 group">
-                <div className="mt-0.5 flex-shrink-0">
+                <div className="mt-0.5 flex shrink-0">
                   <CheckCircle2
                     className="w-5 h-5 text-emerald-500 transition-transform duration-300 group-hover:scale-110"
                     strokeWidth={2.5}
@@ -73,7 +73,7 @@ function Features() {
 
         {/* RIGHT: Illustration Card */}
         <div className="flex items-center justify-center">
-          <div className="relative w-full max-w-sm sm:max-w-md bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-xl p-8 sm:p-10 min-h-[320px] sm:min-h-[380px] flex flex-col items-center justify-end">
+          <div className="relative w-full max-w-sm sm:max-w-md bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden shadow-xl p-8 sm:p-10 min-h-80  flex flex-col items-center justify-end">
             {/* Dot pattern */}
             <div
               className="absolute inset-0 opacity-[0.06]"

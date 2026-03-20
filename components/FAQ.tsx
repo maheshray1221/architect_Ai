@@ -10,19 +10,38 @@ import {
 import { faqs } from "@/constants/data";
 import { Badge } from "@/components/ui/badge";
 
-
 export default function FAQ() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <section className="w-full min-h-screen bg-white flex items-center justify-center px-4 py-1 sm:py-10 lg:py-28">
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-10">
         {/* Heading */}
         <div className="text-center">
           <Badge
-        variant="outline"
-        className="text-xs font-semibold tracking-widest uppercase text-indigo-600 border-indigo-200 bg-indigo-50 px-3 py-1 mb-4"
-      >
-       COMMON QUESTIONS
-      </Badge>
+            variant="outline"
+            className="text-xs font-semibold tracking-widest uppercase text-indigo-600 border-indigo-200 bg-indigo-50 px-3 py-1 mb-4"
+          >
+            COMMON QUESTIONS
+          </Badge>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             <span className="block sm:hidden">
               Frequently Asked
@@ -32,7 +51,7 @@ export default function FAQ() {
           </h2>
         </div>
 
-        {/* Accordion — type="single" + collapsible ensures only one open at a time */}
+        {/* Accordion */}
         <Accordion type="single" collapsible className="flex flex-col gap-3">
           {faqs.map((faq, idx) => (
             <AccordionItem

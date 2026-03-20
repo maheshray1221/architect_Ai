@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Post } from "@/constants/data";
 
-export function BlogCard({ post }: { post: Post}) {
+export function BlogCard({ post , priority = false }: { post: Post,priority:boolean}) {
   return (
     <a href={post.href} className="group flex flex-col gap-4 cursor-pointer">
       {/* Image */}
@@ -11,6 +11,8 @@ export function BlogCard({ post }: { post: Post}) {
           src={post.image}
           alt={post.title}
           fill
+          priority={priority}
+          loading={priority? undefined : "lazy"}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />

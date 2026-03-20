@@ -74,7 +74,7 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
             <li key={i} className="flex items-center gap-3">
               <Check
                 className={cn(
-                  "w-4 h-4 flex-shrink-0",
+                  "w-4 h-4 flex shrink-0",
                   tier.highlighted ? "text-indigo-500" : "text-emerald-500"
                 )}
                 strokeWidth={2.5}

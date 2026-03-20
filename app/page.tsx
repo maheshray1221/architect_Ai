@@ -1,5 +1,6 @@
 import Blog from "@/components/Blogs";
 import Contact from "@/components/Contact";
+import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
@@ -14,16 +15,17 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <Hero/>
-    <Services/>
-    <Features/>
-    <PricingPage/>
-    <FAQ/>
-    <Testimonials/>
-    <Blog/>
-    <Contact/>
-    <Location/>
-    <Footer/>
+      <Hero />
+      <Services />
+      <Features />
+      <PricingPage />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+      <Blog />
+      <Contact />
+      <Location />
+      <Footer />
     </>
   );
 }
