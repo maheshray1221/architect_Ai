@@ -114,16 +114,16 @@ export const servicesCard: ServicesCard[] = [
   },
 ];
 
-
 type Features = {
-  title:string
-  description:string
-}
+  title: string;
+  description: string;
+};
 
-export const features:Features[] = [
+export const features: Features[] = [
   {
     title: "Unmatched Security",
-    description: "Military-grade encryption for all data at rest and in transit.",
+    description:
+      "Military-grade encryption for all data at rest and in transit.",
   },
   {
     title: "99.9% Uptime SLA",
@@ -135,10 +135,7 @@ export const features:Features[] = [
   },
 ];
 
-
 // -----------  Product Pricing  -----------------
-
-
 
 export interface PricingTier {
   id: string;
@@ -192,15 +189,14 @@ export const tiers: PricingTier[] = [
   },
 ];
 
-
 // -----------  Product Pricing  -----------------
 
 type Faq = {
-  question:string
-  answer:string
-}
+  question: string;
+  answer: string;
+};
 
-export const faqs:Faq[] = [
+export const faqs: Faq[] = [
   {
     question: "What is the integration process?",
     answer:
@@ -225,5 +221,49 @@ export const faqs:Faq[] = [
     question: "What payment methods do you accept?",
     answer:
       "We accept all major credit/debit cards, UPI, net banking, and PayPal. All transactions are secured with SSL encryption.",
+  },
+];
+
+// -----------  Product Pricing  -----------------
+type Testimonials = {
+  name: string;
+  role: string;
+  avatar: string;
+  review: string;
+  rating: number;
+};
+
+export const testimonials:Testimonials[] = [
+  {
+    name: "Marcus Sterling",
+    role: "CTO, Nexus Corp",
+    avatar: "",
+    review:
+      "Architect AI transformed our workflow entirely. The precision of their AI models is unlike anything we've seen in the market.",
+    rating: 5,
+  },
+  {
+    name: "Sarah Chen",
+    role: "Lead Designer, Studio Flux",
+    avatar: "",
+    review:
+      "The clean architecture and thoughtful design system make it a joy to work with every day. Truly an elite platform.",
+    rating: 5,
+  },
+  {
+    name: "Rahul Verma",
+    role: "Founder, BuildFast",
+    avatar: "",
+    review:
+      "Onboarding was seamless and the support team is incredibly responsive. We scaled from 0 to 10k users without any hiccups.",
+    rating: 5,
+  },
+  {
+    name: "Aisha Patel",
+    role: "Product Manager, Zova",
+    avatar: "",
+    review:
+      "Finally a platform that respects developer experience. The API is clean, docs are excellent, and it just works.",
+    rating: 5,
   },
 ];
