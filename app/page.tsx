@@ -1,7 +1,9 @@
 import Blog from "@/components/Blogs";
+import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Location from "@/components/Location";
 import PricingPage from "@/components/Pricing";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonial";
@@ -17,6 +19,8 @@ export default function Home() {
     <FAQ/>
     <Testimonials/>
     <Blog/>
+    <Contact/>
+    <Location/>
     </>
   );
 }

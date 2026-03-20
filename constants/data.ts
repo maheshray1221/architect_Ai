@@ -278,7 +278,7 @@ export type Post = {
   href: string;
 };
 
-export const posts:Post[] = [
+export const posts: Post[] = [
   {
     id: 1,
     category: "Engineering",
@@ -318,5 +318,38 @@ export const posts:Post[] = [
       "Small UX changes, big results. Here's exactly what we changed and why it worked.",
     image: "",
     href: "#",
+  },
+];
+
+export type Office = {
+  title: string;
+  address: string;
+  phone: string;
+  email: string;
+  accent: boolean;
+};
+
+export const offices: Office[] = [
+  {
+    title: "Global Headquarters",
+    address:
+      "100 Tech Avenue, Suite 400\nSan Francisco, CA 94105\nUnited States",
+    phone: "+1 (415) 000-1234",
+    email: "hello@company.com",
+    accent: true,
+  },
+  {
+    title: "Asia Pacific",
+    address: "12 Innovation Drive, Level 8\nBangalore, KA 560001\nIndia",
+    phone: "+91 80 0000 1234",
+    email: "apac@company.com",
+    accent: false,
+  },
+  {
+    title: "Europe Office",
+    address: "45 Startup Lane, Floor 3\nBerlin, 10115\nGermany",
+    phone: "+49 30 000 1234",
+    email: "eu@company.com",
+    accent: false,
   },
 ];
