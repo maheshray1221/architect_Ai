@@ -233,7 +233,7 @@ type Testimonials = {
   rating: number;
 };
 
-export const testimonials:Testimonials[] = [
+export const testimonials: Testimonials[] = [
   {
     name: "Marcus Sterling",
     role: "CTO, Nexus Corp",
@@ -265,5 +265,58 @@ export const testimonials:Testimonials[] = [
     review:
       "Finally a platform that respects developer experience. The API is clean, docs are excellent, and it just works.",
     rating: 5,
+  },
+];
+
+export type Post = {
+  id: number;
+  category: string;
+  readTime: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  href: string;
+};
+
+export const posts:Post[] = [
+  {
+    id: 1,
+    category: "Engineering",
+    readTime: "5 Min Read",
+    title: "The Future of Edge Computing and Neural Fabrics",
+    excerpt:
+      "How distributed AI nodes are changing the latency landscape for modern applications.",
+    image: "",
+    href: "#",
+  },
+  {
+    id: 2,
+    category: "Security",
+    readTime: "8 Min Read",
+    title: "Zero Trust Architecture for SaaS Scale",
+    excerpt:
+      "Implementing enterprise-grade identity management without sacrificing user experience.",
+    image: "",
+    href: "#",
+  },
+  {
+    id: 3,
+    category: "Design",
+    readTime: "4 Min Read",
+    title: "Building Design Systems That Scale Across Teams",
+    excerpt:
+      "A practical guide to tokens, components, and documentation that actually gets used.",
+    image: "",
+    href: "#",
+  },
+  {
+    id: 4,
+    category: "Product",
+    readTime: "6 Min Read",
+    title: "How We Reduced Onboarding Drop-off by 60%",
+    excerpt:
+      "Small UX changes, big results. Here's exactly what we changed and why it worked.",
+    image: "",
+    href: "#",
   },
 ];
