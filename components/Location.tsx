@@ -3,16 +3,24 @@
 
 import { offices } from "@/constants/data";
 import { OfficeCard } from "./officeCard";
+import { Badge } from "@/components/ui/badge";
+
 
 export default function Location() {
   return (
-    <section className="w-full bg-slate-50 px-4 py-16 sm:py-20 lg:py-28">
+    <section className="w-full bg-[#f3f4f6] px-4 py-16 sm:py-20 lg:py-28">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
 
         {/* Heading */}
         <div className="text-center">
+          <Badge
+        variant="outline"
+        className="text-xs font-semibold tracking-widest uppercase text-indigo-600 border-indigo-200 bg-indigo-50 px-3 py-1 mb-4"
+      >
+       Our Locations
+      </Badge>
           <span className="text-xs font-bold tracking-[0.2em] uppercase text-blue-600">
-            Our Locations
+           
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Find Us Anywhere

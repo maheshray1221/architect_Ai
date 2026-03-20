@@ -36,7 +36,7 @@ export const navContent: NavContent = {
   button: {
     id: 1,
     label: "Get Started",
-    variant: "secondary",
+    variant: "default",
     className: "",
   },
 };
@@ -57,13 +57,13 @@ export const heroContent: HeroContent = {
     {
       id: 1,
       label: "Get Started",
-      variant: "secondary",
+      variant: "default",
       className: "bg-[#3425cd] shadow-md text-white py-6 ml-3 mr-3 text-lg",
     },
     {
       id: 2,
       label: "View Demo",
-      variant: "secondary",
+      variant: "default",
       className: " py-6 ml-3 mr-3 shadow-md py-6 ml-3 mr-3 text-lg",
     },
   ],

@@ -1,7 +1,7 @@
 "use client";
 import { CheckCircle2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import {features}from '@/constants/data'
+import { features } from "@/constants/data";
 import Image from "next/image";
 
 function Features() {
@@ -13,7 +13,7 @@ function Features() {
           <div>
             <Badge
               variant="outline"
-              className="text-xs font-semibold tracking-widest uppercase text-slate-500 border-slate-300 px-3 py-1"
+              className="text-xs font-semibold tracking-widest uppercase text-indigo-600 border-indigo-200 bg-indigo-50 px-3 py-1 mb-4"
             >
               Why Choose Us
             </Badge>
@@ -84,14 +84,13 @@ function Features() {
               }}
             />
 
-            <Image 
-            src="/illustrations/undraw_team-spirit_18vw.svg"
-            alt="Team meeting illustration"
-            width={400}
-            height={400}
-            className="w-full h-auto"
-            priority
-            
+            <Image
+              src="/illustrations/undraw_team-spirit_18vw.svg"
+              alt="Team meeting illustration"
+              width={400}
+              height={400}
+              className="w-full h-auto"
+              priority
             />
 
             <div className="relative z-10 w-3/4 h-px bg-slate-200 mt-3 rounded-full" />

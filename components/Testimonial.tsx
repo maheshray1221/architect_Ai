@@ -4,6 +4,7 @@ import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {testimonials} from "@/constants/data"
+import { Badge } from "@/components/ui/badge";
 
 export default function Testimonials() {
   return (
@@ -12,6 +13,12 @@ export default function Testimonials() {
 
         {/* Heading */}
         <div className="text-center">
+           <Badge
+        variant="outline"
+        className="text-xs font-semibold tracking-widest uppercase text-indigo-600 border-indigo-200 bg-indigo-50 px-3 py-1 mb-4"
+      >
+       LOVE FROM USERS
+      </Badge>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             What Our Users Say
           </h2>
