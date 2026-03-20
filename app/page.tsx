@@ -2,8 +2,10 @@ import Blog from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Location from "@/components/Location";
+import Navbar from "@/components/Navbar";
 import PricingPage from "@/components/Pricing";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonial";
@@ -21,6 +23,7 @@ export default function Home() {
     <Blog/>
     <Contact/>
     <Location/>
+    <Footer/>
     </>
   );
 }

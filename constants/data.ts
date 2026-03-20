@@ -225,6 +225,7 @@ export const faqs: Faq[] = [
 ];
 
 // -----------  Product Pricing  -----------------
+
 type Testimonials = {
   name: string;
   role: string;
@@ -268,6 +269,8 @@ export const testimonials: Testimonials[] = [
   },
 ];
 
+// -----------  Blogs  -----------------
+
 export type Post = {
   id: number;
   category: string;
@@ -286,7 +289,7 @@ export const posts: Post[] = [
     title: "The Future of Edge Computing and Neural Fabrics",
     excerpt:
       "How distributed AI nodes are changing the latency landscape for modern applications.",
-    image: "",
+    image: "/computer.jpg",
     href: "#",
   },
   {
@@ -296,7 +299,7 @@ export const posts: Post[] = [
     title: "Zero Trust Architecture for SaaS Scale",
     excerpt:
       "Implementing enterprise-grade identity management without sacrificing user experience.",
-    image: "",
+    image: "/laptop.jpg",
     href: "#",
   },
   {
@@ -306,7 +309,7 @@ export const posts: Post[] = [
     title: "Building Design Systems That Scale Across Teams",
     excerpt:
       "A practical guide to tokens, components, and documentation that actually gets used.",
-    image: "",
+    image: "/radiation.jpg",
     href: "#",
   },
   {
@@ -316,10 +319,12 @@ export const posts: Post[] = [
     title: "How We Reduced Onboarding Drop-off by 60%",
     excerpt:
       "Small UX changes, big results. Here's exactly what we changed and why it worked.",
-    image: "",
+    image: "/team.jpg",
     href: "#",
   },
 ];
+
+// -----------  Company Location  -----------------
 
 export type Office = {
   title: string;
@@ -345,11 +350,26 @@ export const offices: Office[] = [
     email: "apac@company.com",
     accent: false,
   },
+ 
+];
+
+// -----------  Footer  -----------------
+
+export const footerLinks = [
   {
-    title: "Europe Office",
-    address: "45 Startup Lane, Floor 3\nBerlin, 10115\nGermany",
-    phone: "+49 30 000 1234",
-    email: "eu@company.com",
-    accent: false,
+    heading: "Platform",
+    links: ["Analytics", "Cloud Services", "AI Engine"],
+  },
+  {
+    heading: "Company",
+    links: ["About Us", "Careers", "Press"],
+  },
+  {
+    heading: "Resources",
+    links: ["Documentation", "Help Center", "Blog"],
+  },
+  {
+    heading: "Legal",
+    links: ["Privacy Policy", "Terms of Service"],
   },
 ];
