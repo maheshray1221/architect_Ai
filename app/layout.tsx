@@ -53,7 +53,7 @@ export default function RootLayout({
       className={`${sora.variable} ${dmSans.variable} h-full antialiased`}
     >
       
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-screen pt-14 flex flex-col font-sans">
         <Navbar/>
         {children}</body>
     </html>
